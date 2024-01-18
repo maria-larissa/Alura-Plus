@@ -1,0 +1,50 @@
+:root{
+    --primary-color: #ffffff;
+    --secundary-gray: #c0c0c0;
+    --button-blue: #167bf7;
+    --background-color: #00030c;
+    --font: 'Inter';
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 1.75rem;
+}
+
+.main-section{
+    background-image: url("/assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50%;
+}
+
+.button{
+    background-color: var(--button-blue);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    display:block;
+    text-decoration: none;
+}
+
+.secondary-button{
+    background-color: transparent;
+    border: 0.125rem solid var(--primary-color);
+}
+
+.warning{
+    font-size: 0.75rem;
+    color: var(--secundary-gray);
+}
