@@ -4,6 +4,7 @@
     --button-blue: #167bf7;
     --background-color: #00030c;
     --font: 'Inter';
+    --button-blue-efect: #3c92fa; 
 }
 
 body{
@@ -22,14 +23,37 @@ h1{
     background-image: url("/assets/images/background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
+/* Box with main section inside */
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 50% 50%;
 }
 
+.container__box{
+    margin: 0 6rem;
+}
+
+
+/* Titlle font configuration */
+.container__title{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+
+/* Image configuration */
+.container__image{
+    margin: 1rem 0 2rem 0;
+}
+
+
+
+/* Buttons of main page */
 .button{
     background-color: var(--button-blue);
     border-radius: 0.3rem;
@@ -37,6 +61,12 @@ h1{
     color: var(--primary-color);
     display:block;
     text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.button:hover{
+    background-color: var(--button-blue-efect);
+    color: var(--background-color);
 }
 
 .secondary-button{
@@ -44,7 +74,104 @@ h1{
     border: 0.125rem solid var(--primary-color);
 }
 
+
+/* Warning notice */
 .warning{
     font-size: 0.75rem;
     color: var(--secundary-gray);
+}
+
+
+/* Secondy section*/
+.secondary{
+    align-items: center;
+    margin: 0 10rem; 
+}
+
+
+/* Second image */
+.secondary_image{
+    width: 80%;
+}
+
+.description__title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.description__text{
+    color: var(--secundary-gray);
+}
+
+
+.second__button{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.container__description{
+    padding: 2rem;
+}
+
+
+/* Section with devices */
+.devices{
+    text-align: center;
+}
+
+.devices__title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.devices__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.device__list__item{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin: 5rem 4rem;
+}
+
+.footer__logo{
+    display: inline;
+}
+
+.footer__links__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.link__item a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.link__item a:hover{
+    color: var(--button-blue);
+}
+
+
+.footer__text{
+    color: var(--secundary-gray);
+    font-size: 0.875rem;
+    margin: 1rem 0;
 }
